@@ -15,6 +15,13 @@ framework.
 """
 import os
 
+from os.path import join, dirname
+from dotenv import load_dotenv
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_sis.settings")
 
 # Catch the USR1 signal and dump a traceback of all running threads.

@@ -18,6 +18,7 @@ CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'media/uploads')
 BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components/')
 
 LOGIN_REDIRECT_URL = "/"
+
 MULTI_TENANT = os.getenv('MULTI_TENANT', False)
 DATABASES = {
     'default': {
@@ -52,7 +53,7 @@ ALLOWED_HOSTS = ['*']
 # username, id, or unique_id
 NAVIANCE_SWORD_ID = os.getenv('NAVIANCE_SWORD_ID', 'username')
 
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'Europe/Madrid'
 TIME_INPUT_FORMATS = ('%I:%M %p', '%I:%M%p', '%H:%M:%S', '%H:%M')
 TIME_FORMAT = 'h:i A'
 DATE_INPUT_FORMATS = ('%m/%d/%Y', '%Y-%m-%d', '%m/%d/%y', '%b %d %Y',
